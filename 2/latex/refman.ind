@@ -1,0 +1,20 @@
+\begin{theindex}
+
+  \item {cipher\_error}, \hyperpage{5}
+    \subitem {cipher\_error}, \hyperpage{6}
+  \item {coder}
+    \subitem {modAlphaCipher}, \hyperpage{8}
+
+  \indexspace
+
+  \item {decoder}
+    \subitem {modAlphaCipher}, \hyperpage{8}
+
+  \indexspace
+
+  \item {modAlphaCipher}, \hyperpage{7}
+    \subitem {coder}, \hyperpage{8}
+    \subitem {decoder}, \hyperpage{8}
+    \subitem {modAlphaCipher}, \hyperpage{7}
+
+\end{theindex}
