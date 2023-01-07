@@ -1,0 +1,89 @@
+\hypertarget{classmodAlphaCipher}{}\doxysection{Класс mod\+Alpha\+Cipher}
+\label{classmodAlphaCipher}\index{modAlphaCipher@{modAlphaCipher}}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}{mod\+Alpha\+Cipher}} ()=delete
+\begin{DoxyCompactList}\small\item\em Метод класса, проверяющий расшифрованный текст на валидность \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodAlphaCipher_a8f7260457c32cc56ebc00b69df3af852}\label{classmodAlphaCipher_a8f7260457c32cc56ebc00b69df3af852}} 
+{\bfseries mod\+Alpha\+Cipher} (const int \&newkey)
+\item 
+string \mbox{\hyperlink{classmodAlphaCipher_ade68b81b20ae3824790f88b414ae81db}{coder}} (const string \&open\+\_\+st)
+\begin{DoxyCompactList}\small\item\em Зашифрование \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classmodAlphaCipher_a81d358cf7019ef2a020d1fce1c70809b}{decoder}} (const string \&cipher\+\_\+st)
+\begin{DoxyCompactList}\small\item\em Расшифрование \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}\label{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}} 
+\index{modAlphaCipher@{modAlphaCipher}!modAlphaCipher@{modAlphaCipher}}
+\index{modAlphaCipher@{modAlphaCipher}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{modAlphaCipher()}{modAlphaCipher()}}
+{\footnotesize\ttfamily mod\+Alpha\+Cipher\+::mod\+Alpha\+Cipher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Метод класса, проверяющий расшифрованный текст на валидность 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em s} & Зашифрованный текст на английском языке \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+result 
+\end{DoxyReturn}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classmodAlphaCipher_ade68b81b20ae3824790f88b414ae81db}\label{classmodAlphaCipher_ade68b81b20ae3824790f88b414ae81db}} 
+\index{modAlphaCipher@{modAlphaCipher}!coder@{coder}}
+\index{coder@{coder}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{coder()}{coder()}}
+{\footnotesize\ttfamily string mod\+Alpha\+Cipher\+::coder (\begin{DoxyParamCaption}\item[{const string \&}]{open\+\_\+st }\end{DoxyParamCaption})}
+
+
+
+Зашифрование 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em text} & Открытый текст на английском языке @warnings Текст не должен быть пустой строкой и не должен содержать пробелы. В тексте могут содержаться знаки препинания и цифры. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+result Зашифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если в качестве текста введена пустая строка \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmodAlphaCipher_a81d358cf7019ef2a020d1fce1c70809b}\label{classmodAlphaCipher_a81d358cf7019ef2a020d1fce1c70809b}} 
+\index{modAlphaCipher@{modAlphaCipher}!decoder@{decoder}}
+\index{decoder@{decoder}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{decoder()}{decoder()}}
+{\footnotesize\ttfamily string mod\+Alpha\+Cipher\+::decoder (\begin{DoxyParamCaption}\item[{const string \&}]{cipher\+\_\+st }\end{DoxyParamCaption})}
+
+
+
+Расшифрование 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em text} & Зашифрованный текст на английском языке @warnings Текст не должен быть пустой строкой и не должен содержать пробелы. В тексте могут содержаться знаки препинания и цифры. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+result Расшифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если в качестве текста введена пустая строка \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+main.\+cpp\end{DoxyCompactItemize}
